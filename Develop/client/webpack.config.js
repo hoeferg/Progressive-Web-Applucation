@@ -18,12 +18,51 @@ module.exports = () => {
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
-      
-    ],
+      new HtmlWebpackPlugin({
+        template: './index.html',
+        title: 'TODOs List'
+      }),
+    new InjectManifest({
+      swSrc: './src/sw.js',
+      swDest: 'service-worker.js',
+    }),
+    new WebpackPwaManifest({
+      name: 'Text Editor',
+      short_name: 'JATE',
+      description: 'My awesome Progressive Web App!',
+      background_color: '#225CA3',
+      theme_color: '#225CA3',
+      start_url: '/', 
+      publicPath: '/',
+      inject: true,
+      icons: [
+        {
+          src: path.resolve('src/images/icon.png'),
+          sizes: [96, 128, 192, 256, 384, 512],
+          destination: path.join('assets', 'icons')
+        },
+  
+      ]
+    })
+  ],
 
     module: {
       rules: [
-        
+        {
+          test: /\.css$/i,
+          use: ['style-loader', 'css-loader'],
+        },
+        {
+          test: /\.m?js$/,
+          exclude: /node_modules/,
+          use: {
+            loader: 'babel-loader',
+            options: {
+              presets: ['@babel/preset-env'],
+              plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime'],
+            },
+          },
+        },
       ],
     },
   };
