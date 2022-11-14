@@ -20,31 +20,32 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'TODOs List'
+        title: 'JATE'
       }),
-    new InjectManifest({
-      swSrc: './src-sw.js',
-      swDest: 'src-sw.js',
-    }),
-    new WebpackPwaManifest({
-      name: 'Text Editor',
-      short_name: 'JATE',
-      description: 'My awesome Progressive Web App!',
-      background_color: '#225CA3',
-      theme_color: '#225CA3',
-      start_url: '/', 
-      publicPath: '/',
-      inject: true,
-      icons: [
-        {
-          src: path.resolve('src/images/logo.png'),
-          sizes: [96, 128, 192, 256, 384, 512],
-          destination: path.join('assets', 'icons')
-        },
-  
-      ]
-    })
-  ],
+      new InjectManifest({
+        swSrc: './src-sw.js',
+        swDest: 'src-sw.js',
+      }),
+      new WebpackPwaManifest({
+        name: 'Text Editor',
+        short_name: 'JATE',
+        description: 'My awesome Progressive Web App!',
+        background_color: '#225CA3',
+        theme_color: '#225CA3',
+        start_url: '/',
+        publicPath: '/',
+        inject: true,
+        fingerprints: false,
+        icons: [
+          {
+            src: path.resolve('src/images/logo.png'),
+            sizes: [96, 128, 192, 256, 384, 512],
+            destination: path.join('assets', 'icons')
+          },
+
+        ]
+      })
+    ],
 
     module: {
       rules: [
