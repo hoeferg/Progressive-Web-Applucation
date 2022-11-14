@@ -23,8 +23,8 @@ module.exports = () => {
         title: 'TODOs List'
       }),
     new InjectManifest({
-      swSrc: './src/sw.js',
-      swDest: 'service-worker.js',
+      swSrc: './src-sw.js',
+      swDest: 'src-sw.js',
     }),
     new WebpackPwaManifest({
       name: 'Text Editor',
@@ -37,7 +37,7 @@ module.exports = () => {
       inject: true,
       icons: [
         {
-          src: path.resolve('src/images/icon.png'),
+          src: path.resolve('src/images/logo.png'),
           sizes: [96, 128, 192, 256, 384, 512],
           destination: path.join('assets', 'icons')
         },
