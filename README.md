@@ -1,5 +1,7 @@
 # JATE  
 
+![screen shot](assets/jest.png)
+
 ## Table of Contents  
 * [Description](##Description)  
 * [Installation](##Installation)  
@@ -20,8 +22,6 @@ To go to the webpage go to https://git.heroku.com/service-worker-bootcamp.git. T
 ## Usage
 
 Jate is to be used to help write and edit any text someone needs. Type anything you would like into the text editor. Then that information will be saved for future reference.
-
-![screen shot](assets/jest.png)
 
 ## License
 
