@@ -1,5 +1,13 @@
 # JATE  
 
+## Table of Contents  
+* [Description](##Description)  
+* [Installation](##Installation)  
+* [Usage](##Usage) 
+* [License](##License)  
+* [Contact](##Contact)  
+
+
 ## Description
 
 Jate is a text editor application. It was created with progressive web standards. Jate can be downloaded and includes a service worker. Jate is an application that can be used for all your writing needs.
@@ -15,10 +23,11 @@ Jate is to be used to help write and edit any text someone needs. Type anything 
 
 ![screen shot](assets/jest.png)
 
-## Credits
-
-N/A
-
 ## License
 
-N/A
+No license
+
+---
+
+## Contact
+Gayle Hoefer - [LinkedIn](https://www.linkedin.com/in/gayle-hoefer-61a2a3124/) - [Github](https://github.com/hoeferg)
