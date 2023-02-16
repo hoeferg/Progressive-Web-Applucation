@@ -17,7 +17,7 @@ Jate is a text editor application. It was created with progressive web standards
 
 ## Installation
 
-To go to the webpage go to https://git.heroku.com/service-worker-bootcamp.git. Then hit the download button to download the program.
+To go to the webpage go to https://git.heroku.com/service-worker-bootcamp.git. Then hit the download button at the top of the screen to download the program.
 
 ## Usage
 
