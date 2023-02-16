@@ -12,7 +12,7 @@
 
 ## Description
 
-Jate is a text editor application. It was created with progressive web standards. Jate can be downloaded and includes a service worker. Jate is an application that can be used for all your writing needs.
+Jate is a text editor application. It was created with progressive web standards. Jate can be downloaded and includes a service worker. Jate is an application that can be used for all your writing needs.This application is also a PWA application.
 
 
 ## Installation
